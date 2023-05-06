@@ -1,7 +1,11 @@
 body{
-   background-color: cornflowerblue;
+   background-color: steelblue;
+}
+
+h3{
+    color: azure;
 }
 
 h1{
-    color: maroon;
+    color: black;
 }
