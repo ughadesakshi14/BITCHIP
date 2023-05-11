@@ -24,6 +24,14 @@
 }
 
 
+.btn{
+    display: inline;
+    margin: .7rem;
+    background: var(--lightblue);
+    color: aliceblue;
+    border: .1rem solid var(--lightblue);
+    cursor: pointer;
+}
 
 header{
     position: fixed;
@@ -122,4 +130,42 @@ header.search-bar-container label:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: aliceblue;
+    width: 70rem;
+}
+
+.login-form-container form h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.login-form-container form.box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: 6rem 0;
+    border: 1rem solid rgba(0, 0, 0, 0.3);
+    text-transform: none;
+}
+
+.login-form-container form.box:focus{
+    background-color: var(--lightblue);
+}
+
+.login-form-container form #remember{
+    margin: .5rem 0;
+}
+
+.login-form-container form label{
+    font-size: 1rem;
 }
