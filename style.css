@@ -9,8 +9,8 @@
 
 *{
     font-family: 'Nunito', sans-serif;
-    margin: 10;
-    padding: 10;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
     text-decoration: none;
@@ -43,7 +43,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 15%;
+    padding: 3rem 10%;
 }
 
 h1{
@@ -66,7 +66,7 @@ header.logo span{
 header .navbar a{
     color: aliceblue;
     font-size: 2rem;
-    margin: 0.8rem;
+    margin: 0.7rem;
 }
 
 header .navbar a:hover{
@@ -123,7 +123,7 @@ header.search-bar-container label:hover{
 .login-form-container{
     position: fixed;
     z-index: 100;
-    top: 0;left: 0;
+    top: 10%;left: 0;
     min-height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -132,12 +132,18 @@ header.search-bar-container label:hover{
     justify-content: center;
 }
 
+
+.login-form-container .active{
+top: 0;
+}
+
 .login-form-container form{
-    margin: 2rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
+    margin: .5rem;
+    padding: 0.5rem .5rem;
+    border-radius: 0.2rem;
     background: aliceblue;
-    width: 70rem;
+    width: 40rem;
+    height: 20rem;
 }
 
 .login-form-container form h3{
@@ -145,15 +151,15 @@ header.search-bar-container label:hover{
     color: #444;
     text-transform: uppercase;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .login-form-container form.box{
-    width: 100%;
-    padding: 1rem;
+    width: 50%;
+    padding: 0.5rem;
     font-size: 1.7rem;
     color: #333;
-    margin: 6rem 0;
+    margin: 4rem 0;
     border: 1rem solid rgba(0, 0, 0, 0.3);
     text-transform: none;
 }
@@ -169,3 +175,42 @@ header.search-bar-container label:hover{
 .login-form-container form label{
     font-size: 1rem;
 }
+
+.login-form-container form.btn{
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 0.7rem;
+    color: #666;
+}
+
+
+.login-form-container form p a{
+    color: var(--lightblue);
+}
+
+.login-form-container form p a:hover{
+    color: #333;
+    text-decoration:underline ;
+}
+
+.login-form-container #form-close{
+    position: absolute;
+    top: 2rem; right: 3rem;
+    font-size: 5rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#menu-bar{
+    color: aliceblue;
+    border: .5rem solid aliceblue;
+    border-radius: .5rem;
+    font-size: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    display: none;
+}   
