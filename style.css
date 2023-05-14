@@ -207,10 +207,63 @@ top: 0;
 
 #menu-bar{
     color: aliceblue;
-    border: .5rem solid aliceblue;
-    border-radius: .5rem;
-    font-size: .5rem;
-    padding: .5rem 1rem;
-    cursor: pointer;
-    display: none;
+    border: 1rem thin aliceblue;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    cursor: pointer; 
 }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries */
+
+@media(max-width:991px){
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:770px){
+
+    #menu-bar{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100% ; right: 0;left: 0;
+        background: #333;
+        border-top: 0.1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+    }
+
+    header .navbar a{
+        display: block;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        background: #222;
+    }
+}
