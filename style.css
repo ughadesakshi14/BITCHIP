@@ -23,6 +23,9 @@
     color:black;  
 }
 
+section{
+    padding: 1rem 9%;
+}
 
 .btn{
     display: inline;
@@ -214,6 +217,9 @@ top: 0;
     cursor: pointer; 
 }   
 
+.home{
+    display: flex;
+}
 
 
 
@@ -232,7 +238,9 @@ top: 0;
 
 
 
-
+body{
+    height: 300rem;
+}
 
 
 
@@ -257,8 +265,12 @@ top: 0;
         background: #333;
         border-top: 0.1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 2rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
     }
 
+    header.navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
     header .navbar a{
         display: block;
         border-radius: 1rem;
