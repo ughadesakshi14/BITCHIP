@@ -4,7 +4,8 @@ let formbtn=documnet.queryselector('#login-btn');
 let loginForm=documnet.queryselector('#login-bar-container');
 let formClose=documnet.queryselector('#form-close');
 let menu=document.queryselector('#menu-bar');
-let navbar=document.querySelector('#.navbar')
+let navbar=document.querySelector('#.navbar');
+//let videobtn=document.querySelectorAll('#.vid-btn');
 
 
 window.onscroll=()=>{
@@ -33,3 +34,13 @@ formBtn.addEventListner('click',()=>{
 formClose.addEventListner('click',()=>{
     loginForm.classlist.remove('active');
 });
+
+/*videobtn.forEach(btn=>{
+    btn.addEventListner('click',()=>{
+        document.querySelector('.controls.active').classList.remove('active');
+        btn.classList.add('active');
+        let src=btn.getAttribute('data-src');
+        document.querySelector('#video-slider').src= src ;
+    })
+});*/
+
