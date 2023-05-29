@@ -534,19 +534,20 @@ top: 0;
     border-radius: 0.5rem;
 }
 
-.contact.row.form.inputbox{
+.contact.row.form.inputBox{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contact.row.form.inputbox input , .contact.row form textarea{
+.contact.row.form.inputBox input , .contact.row form textarea{
     width: 49%;
     margin: 1rem 0;
     padding: 1rem o;
     font-size: 1.7rem;
     color: #333;
     background-color: aliceblue;
+    text-transform: none;
 }
 
 
@@ -556,7 +557,63 @@ top: 0;
     width: 100%;
 }
 
+/*.brand-container{
+    text-align: center;
+}*/
 
+.footer{
+    background: #666;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.footer .box-container .box{
+    padding: 1rem 0;
+    flex: 1 1 10rem;   
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: aliceblue;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a:hover{
+       color: var(--lightblue);
+       text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size:  1.5rem;
+    font-weight: normal;
+    color: aliceblue;
+    border-top: 1rem solid rgba(255,255,255,2);
+}
+
+.footer .credit span{
+   color: var(--lightblue);
+}
 
 
 
@@ -623,5 +680,9 @@ body{
 
     .heading span{
         font-size: 2.5rem;
+    }
+
+    .contact.row.form.inputBox input{
+        width: 100%;
     }
 }
